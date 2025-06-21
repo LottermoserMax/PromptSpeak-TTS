@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy Policy | PromptSpeak: Text to Speech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f7f9fc;color:#333;line-height:1.6}
+header{background:#2d50f7;color:#fff;padding:60px 20px;text-align:center}
+h1{margin:0 0 10px}
+h2{color:#2d50f7;margin-top:40px}
+section{max-width:800px;margin:40px auto;padding:0 20px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05);border-radius:8px}
+section:not(:first-of-type){margin-top:20px}
+footer{text-align:center;padding:20px;font-size:.9em;color:#666}
+a{color:#2d50f7}
+.language-switch{display:flex;justify-content:center;gap:10px;margin:20px 0}
+button.lang-btn{padding:8px 16px;border:none;border-radius:20px;background:#e0e5fe;color:#2d50f7;cursor:pointer;font-weight:600}
+button.lang-btn.active{background:#2d50f7;color:#fff}
+</style>
+<script>
+function showLang(lang){
+ document.querySelectorAll('.lang-en,.lang-de').forEach(el=>el.style.display='none');
+ document.querySelectorAll('.lang-'+lang).forEach(el=>el.style.display='block');
+ document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+ document.querySelector('.btn-'+lang).classList.add('active');
+}
+window.addEventListener('DOMContentLoaded',()=>showLang('en'));
+</script>
+</head>
+<body>
+<header>
+<h1>Privacy Policy</h1>
+<p>PromptSpeak: Text to Speech</p>
+<div class="language-switch">
+<button class="lang-btn btn-en active" onclick="showLang('en')">English</button>
+<button class="lang-btn btn-de" onclick="showLang('de')">Deutsch</button>
+</div>
+</header>
+
+<section class="lang-en">
+<h2>1. Introduction</h2>
+<p>We respect your privacy and are committed to protecting it. This Privacy Policy (“Policy”) explains how the macOS and iOS application <strong>PromptSpeak: Text to Speech</strong> (“App”, “Service”, “we”, “us”, “our”) handles information. Because the App is fully offline and free of charge, it does <strong>not</strong> collect, store, transmit, or sell any personal data. By using the App you acknowledge that you have read, understood, and agree to the terms of this Policy. If you do not agree, please do not use the App.</p>
+
+<h2>2. Data Collection and Use</h2>
+<p>PromptSpeak operates entirely on your device. The text you enter, your voice settings, and an optional OpenAI API key are saved locally via Apple’s SwiftData framework. The API key, if provided, is secured in the Apple Keychain and never leaves your device. When you tap <em>Generate</em>, the App sends your text over an encrypted HTTPS connection directly to the OpenAI Speech API solely for the few seconds required to create speech. We keep no server logs, copy no text, and receive no metadata that could identify you. The resulting audio file is stored only in the folder you choose (for example, your Desktop); we never upload or back‑up that file.</p>
+
+<h2>3. No Purchases, Ads, or Tracking</h2>
+<p>The App is completely free. It contains no in‑app purchases, subscriptions, advertising frameworks, analytics SDKs, or other tracking technologies. Consequently, we never receive billing information, purchase tokens, or advertising identifiers.</p>
+
+<h2>4. Children’s Privacy</h2>
+<p>PromptSpeak is rated 17 + on the App Store and is not directed to children under 13. We do not knowingly collect data from children. If you believe that a child has provided personal information, please contact us so that we can delete it without delay.</p>
+
+<h2>5. Data Security</h2>
+<p>Although no system can guarantee absolute security, we protect your information with industry‑standard measures such as TLS 1.3 for network traffic, Keychain encryption for secrets, and Apple’s hardened runtime. Because we retain no personal data, any request for access, correction, or deletion can be fulfilled by removing the files or uninstalling the App.</p>
+
+<h2>6. Changes to This Policy</h2>
+<p>We may update this Policy from time to time to reflect changes in the App or legal requirements. The “Last updated” date will change accordingly, and significant modifications will be announced within the App. Continued use after an update means you accept the revised Policy.</p>
+
+<h2>7. Contact</h2>
+<p>For questions or concerns about this Policy, please e‑mail <a href="mailto:lottermoser.max@icloud.com">lottermoser.max@icloud.com</a>.</p>
+</section>
+
+<section class="lang-de">
+<h2>1. Einleitung</h2>
+<p>Wir nehmen den Schutz Ihrer Daten sehr ernst. Diese Datenschutzerklärung („Erklärung“) erläutert, wie die macOS‑ und iOS‑App <strong>PromptSpeak: Text to Speech</strong> („App“, „Dienst“, „wir“) mit Informationen umgeht. Die App arbeitet vollständig lokal und kostenlos; sie erhebt, speichert, übermittelt oder verkauft <strong>keine</strong> personenbezogenen Daten. Mit der Nutzung der App bestätigen Sie, diese Erklärung gelesen und verstanden zu haben. Wenn Sie nicht einverstanden sind, nutzen Sie die App bitte nicht.</p>
+
+<h2>2. Datenerhebung und -nutzung</h2>
+<p>Sämtliche von Ihnen eingegebenen Texte, Ihre Stimmeinstellungen sowie ein eventuell hinterlegter OpenAI‑API‑Schlüssel bleiben ausschließlich auf Ihrem Gerät. Der Schlüssel wird sicher im Apple Keychain gespeichert. Bei der Sprachgenerierung überträgt die App Ihren Text nur für wenige Sekunden verschlüsselt (TLS) direkt an die OpenAI Speech API. Wir führen keine Server‑Logs, kopieren keine Texte und erhalten keine Metadaten, die Rückschlüsse auf Ihre Person zulassen. Die erzeugte Audiodatei wird allein an dem Speicherort abgelegt, den Sie wählen (z. B. auf Ihrem Schreibtisch), und wird nicht hochgeladen.</p>
+
+<h2>3. Keine Käufe, Werbung oder Tracking</h2>
+<p>Die App ist vollständig kostenlos und enthält weder In‑App‑Käufe noch Werbung, Analyse‑SDKs oder andere Tracking‑Technologien. Daher erhalten wir keinerlei Zahlungs‑ oder Werbeinformationen.</p>
+
+<h2>4. Kinder</h2>
+<p>Die App ist im App Store mit 17 + eingestuft und richtet sich nicht an Kinder unter 13 Jahren. Sollten wir Kenntnis von Daten eines Kindes erlangen, löschen wir diese umgehend.</p>
+
+<h2>5. Datensicherheit</h2>
+<p>Wir sichern Ihre Informationen mit branchenüblichen Maßnahmen wie TLS 1.3, Keychain‑Verschlüsselung und Apples Hardened Runtime. Da wir keine personenbezogenen Daten speichern, können Sie Ihr Recht auf Löschung jederzeit selbst wahrnehmen, indem Sie die Dateien entfernen oder die App deinstallieren.</p>
+
+<h2>6. Änderungen</h2>
+<p>Änderungen dieser Erklärung werden in der App bekanntgegeben. Mit der fortgesetzten Nutzung nach Veröffentlichung stimmen Sie der neuen Fassung zu.</p>
+
+<h2>7. Kontakt</h2>
+<p>Fragen oder Anliegen richten Sie bitte an <a href="mailto:lottermoser.max@icloud.com">lottermoser.max@icloud.com</a>.</p>
+</section>
+
+<footer>
+© 2025 Max Lottermoser – PromptSpeak: Text to Speech
+</footer>
+</body>
+</html>
