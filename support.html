@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Support | PromptSpeak: Text to Speech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#f5f8fe;color:#333;line-height:1.6}
+header{background:#1b4ff9;color:#fff;padding:70px 20px;text-align:center}
+h1{margin:0;font-size:2.5em}
+h2{color:#1b4ff9;margin-top:40px}
+section{max-width:900px;margin:40px auto;padding:0 24px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);border-radius:10px}
+section:not(:first-of-type){margin-top:30px}
+a{color:#1b4ff9;text-decoration:none}
+footer{text-align:center;padding:25px;font-size:.9em;color:#666}
+.language-switch{display:flex;justify-content:center;gap:10px;margin:25px 0}
+.btn{padding:8px 18px;border:none;border-radius:18px;font-weight:600;cursor:pointer;background:#e3e9ff;color:#1b4ff9}
+.btn.active{background:#1b4ff9;color:#fff}
+details summary{cursor:pointer;font-weight:600;list-style:none;padding:15px 0;border-bottom:1px solid #edf0fa}
+details:last-of-type summary{border:none}
+details[open] summary{color:#1b4ff9}
+</style>
+<script>
+function showLang(lang){
+ document.querySelectorAll('.en,.de').forEach(el=>el.style.display='none');
+ document.querySelectorAll('.'+lang).forEach(el=>el.style.display='block');
+ document.querySelectorAll('.btn').forEach(b=>b.classList.remove('active'));
+ document.querySelector('.btn-'+lang).classList.add('active');
+}
+window.addEventListener('DOMContentLoaded',()=>showLang('en'));
+</script>
+</head>
+<body>
+<header>
+<h1>PromptSpeak&nbsp;Support</h1>
+<p>Your questions answered & help when you need it</p>
+<div class="language-switch">
+<button class="btn btn-en active" onclick="showLang('en')">English</button>
+<button class="btn btn-de" onclick="showLang('de')">Deutsch</button>
+</div>
+</header>
+
+<section class="en">
+<h2>Quick Start</h2>
+<ol>
+<li>Paste or type text into the editor.</li>
+<li>Pick a voice & language from the dropdown.</li>
+<li>Adjust speed or pitch if desired.</li>
+<li>Tap <strong>Generate</strong> to hear instant playback.</li>
+<li>Choose <em>Export</em> to save a WAV/MP3 on your Desktop.</li>
+</ol>
+</section>
+
+<section class="de">
+<h2>Schnellstart</h2>
+<ol>
+<li>Text in den Editor eingeben oder einfügen.</li>
+<li>Stimme & Sprache im Dropdown auswählen.</li>
+<li>Tempo oder Tonhöhe optional anpassen.</li>
+<li><strong>Generieren</strong> tippen und sofort anhören.</li>
+<li>Über <em>Export</em> WAV/MP3 auf dem Schreibtisch speichern.</li>
+</ol>
+</section>
+
+<section class="en">
+<h2>Frequently Asked Questions</h2>
+<details><summary>Does PromptSpeak send my text to your servers?</summary><p>No. Your text is sent directly to the OpenAI Speech API over an encrypted connection. We do not see or store it.</p></details>
+<details><summary>Where is the generated audio file stored?</summary><p>Exactly where you choose—by default your Desktop. The file never leaves your Mac unless you share it.</p></details>
+<details><summary>Why can’t I hear any sound?</summary><p>Check your system volume and make sure no Bluetooth headset is muted. Also verify the selected voice supports your language.</p></details>
+<details><summary>Can I use my own OpenAI API key?</summary><p>Yes. Go to Settings → API Key, paste your key, and PromptSpeak will use your own quota instead of the default free tier.</p></details>
+<details><summary>Is the app really free?</summary><p>Yes. There are no ads, subscriptions, or in-app purchases.</p></details>
+</section>
+
+<section class="de">
+<h2>Häufige Fragen</h2>
+<details><summary>Sendet PromptSpeak meinen Text an eure Server?</summary><p>Nein. Der Text wird verschlüsselt direkt an die OpenAI Speech API übertragen. Wir sehen oder speichern ihn nicht.</p></details>
+<details><summary>Wo wird die Audiodatei gespeichert?</summary><p>Dort, wo Sie es wählen – standardmäßig auf Ihrem Schreibtisch. Die Datei verlässt Ihren Mac nur, wenn Sie sie teilen.</p></details>
+<details><summary>Ich höre keinen Ton – was tun?</summary><p>Lautstärke prüfen und sicherstellen, dass kein Bluetooth-Headset stummgeschaltet ist. Vergewissern Sie sich außerdem, dass die gewählte Stimme Ihre Sprache unterstützt.</p></details>
+<details><summary>Kann ich meinen eigenen OpenAI-API-Schlüssel verwenden?</summary><p>Ja. Unter Einstellungen → API Key einfügen. PromptSpeak nutzt dann Ihr eigenes Kontingent statt des kostenlosen Limits.</p></details>
+<details><summary>Ist die App wirklich kostenlos?</summary><p>Ja. Keine Werbung, keine Abos, keine In-App-Käufe.</p></details>
+</section>
+
+<section class="en">
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>App doesn’t start</strong> – Make sure you’re on macOS 14 Sonoma or later.</li>
+<li><strong>Voice list is empty</strong> – Check your Internet connection; voices might need to be reloaded.</li>
+<li><strong>API error 429</strong> – You hit the OpenAI rate limit. Wait a minute and try again.</li>
+</ul>
+</section>
+
+<section class="de">
+<h2>Problembehandlung</h2>
+<ul>
+<li><strong>App startet nicht</strong> – macOS 14 Sonoma oder neuer erforderlich.</li>
+<li><strong>Stimmliste leer</strong> – Internetverbindung prüfen; Stimmen ggf. neu laden.</li>
+<li><strong>API-Fehler 429</strong> – OpenAI-Rate-Limit erreicht. Eine Minute warten und erneut versuchen.</li>
+</ul>
+</section>
+
+<section class="en">
+<h2>Contact Support</h2>
+<p>Still stuck? E-mail us at <a href="mailto:lottermoser.max@icloud.com">lottermoser.max@icloud.com</a>. We aim to reply within 24 hours.</p>
+</section>
+
+<section class="de">
+<h2>Kontakt</h2>
+<p>Noch Fragen? Schreiben Sie an <a href="mailto:lottermoser.max@icloud.com">lottermoser.max@icloud.com</a>. Wir antworten in der Regel innerhalb von 24 Stunden.</p>
+</section>
+
+<footer>
+© 2025 Max Lottermoser – PromptSpeak
+</footer>
+</body>
+</html>
